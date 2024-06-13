@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>AluraGeek</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/cc178e8581.js" crossorigin="anonymous"></script>
+
+    <!--HEADER-->
+    <header><h1>Alurapple</h1></header>
+
+    <!--MAIN-->
+    <main>
+        <!--PRODUCTOS-->
+        <div class="div__productos">
+            <h1>Productos:</h1>
+            <!--CARD DE PRODUCTOS-->
+            <section class="section__productos"></section>
+        </div>
+
+        <!--FORMULARIO-->
+        <div class="div__formulario">
+            <form action="" id="formulario">
+                <h1>Agregar <br>producto:</h1>
+                <fieldset>
+                    <input name="nombreProdcuto" id="nombreProducto" class="input__form" placeholder="Nombre.." type="text" minlength="3" required>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                <fieldset>
+                <input name="precioProducto" id="precioProducto" class="input__form" placeholder="Precio.." type="number" required>
+                <span class="mensaje-error"></span>
+                </fieldset>
+                <fieldset>
+                <input name="urlImagen" id="urlImagen" class="input__form" placeholder="Url de la imagen.." minlength="5" type="text" required>
+                <span class="mensaje-error"></span>
+                </fieldset>
+                <div class="div__botones">  
+                    <button type="button" class="boton__form" id="boton-enviar">Enviar</button>
+                    <button type="button" class="boton__form" id="boton-limpiar">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <h1>Alurapple</h1>
+      <p>Desarrollado por Ivan Beltran &copy;</p>
+      <p>Alura Latam 2024</p>
+    </footer>
+
+    <script src="js/mostrarProductos.js" type="module"></script>
+    <script src="js/crearProducto.js" type="module"></script>
+    <script src="js/borrarProductos.js" type="module"></script>
+    <script src="js/validarInputs.js" type="module"></script>
+    <script src="js/limpiarInputs.js" type="module"></script>
+</body>
+</html>
